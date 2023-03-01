@@ -13,8 +13,8 @@ const Introduction = () => {
           </h2>
           <h3>Junior Web Developer</h3>
           <p>
-            I'm junior frontend developer, developing web application with React
-            js.
+            I'm junior frontend developer, creating modern & dynamic web
+            application with React js.
           </p>
           <div>
             <a

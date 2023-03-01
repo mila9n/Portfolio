@@ -1,14 +1,5 @@
 export default [
   {
-    title: "To Do Lists",
-    tags: ["React", "Redux Toolkit", "Context", "Styled-Components", "CRUD"],
-    description:
-      "To Do lists uses redux toolkit for creating a global store, which we can access anywhere inside the app with useSelector hook and execute any function with useDiapatch hook.To change the theme of this app, context-api has been used.In this app we can create a list, add it to the tasks and delete it as we see fit.",
-    img: "./images/todo final.png",
-    link: "https://github.com/mila9n/To-Do-List",
-    live: "https://todo-app-22.netlify.app",
-  },
-  {
     title: "Multi Step Form",
     tags: [
       "React",
@@ -22,6 +13,15 @@ export default [
     img: "./images/multi-step-final.png",
     link: "https://github.com/mila9n/Multi-step-Form",
     live: "https://multi-step-form22.netlify.app/",
+  },
+  {
+    title: "To Do Lists",
+    tags: ["React", "Redux Toolkit", "Context", "Styled-Components", "CRUD"],
+    description:
+      "To Do lists uses redux toolkit for creating a global store, which we can access anywhere inside the app with useSelector hook and execute any function with useDiapatch hook.To change the theme of this app, context-api has been used.In this app we can create a list, add it to the tasks and delete it as we see fit.",
+    img: "./images/todo final.png",
+    link: "https://github.com/mila9n/To-Do-List",
+    live: "https://todo-app-22.netlify.app",
   },
   {
     title: "Rating App",

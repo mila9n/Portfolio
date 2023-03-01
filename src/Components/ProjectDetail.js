@@ -31,9 +31,9 @@ const ProjectDetail = (props) => {
         </div>
       </div>
 
-      <div className="image">
+      <a href={props.live} target="_blank" className="image">
         <img src={props.img} />
-      </div>
+      </a>
     </ProjectDetailStyle>
   );
 };
