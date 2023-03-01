@@ -54,12 +54,14 @@ export const ProjectDetailStyle = styled.div`
     font-size: 16px;
     line-height: 1.6;
     margin-top: 12px;
+    margin-bottom: 15px;
   }
 
-  .link {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
+  .link,
+  .live__link {
+    display: table;
+    margin: 10px 0;
+    cursor: pointer;
 
     & > a {
       display: flex;
@@ -72,8 +74,8 @@ export const ProjectDetailStyle = styled.div`
       color: #3f72af;
 
       span {
-        font-size: 30px;
-        color: #112d4e;
+        font-size: 20px;
+        color: #3f72af;
         line-height: 1;
         transition: all 300ms ease-in-out;
       }

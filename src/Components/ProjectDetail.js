@@ -1,6 +1,6 @@
 import React from "react";
 import { ProjectDetailStyle } from "./Styles/ProjectDetail.styled";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 
 const ProjectDetail = (props) => {
   return (
@@ -13,10 +13,20 @@ const ProjectDetail = (props) => {
           })}
         </div>
         <p>{props.description}</p>
+        <div className="live__link">
+          <a href={props.live} target="_blank">
+            Go live
+            <span>
+              <FaAngleRight />
+            </span>
+          </a>
+        </div>
         <div className="link">
           <a href={props.link} target="_blank">
             View code
-            <span>&#8594;</span>
+            <span>
+              <FaAngleRight />
+            </span>
           </a>
         </div>
       </div>

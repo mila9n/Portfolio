@@ -16,6 +16,7 @@ const Projects = () => {
         description={item.description}
         img={item.img}
         link={item.link}
+        live={item.live}
       />
     );
   });
