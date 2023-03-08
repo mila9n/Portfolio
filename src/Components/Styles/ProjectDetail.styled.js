@@ -12,19 +12,36 @@ export const ProjectDetailStyle = styled.div`
 
   & > .image {
     width: 46%;
+    position: relative;
+    z-index: 1;
 
     img {
       width: 100%;
-      border-radius: 10px;
-      transition: transform 500ms ease-in-out, box-shadow 500ms ease-in-out;
-      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+      height: 96%;
+      object-fit: cover;
       cursor: pointer;
+      border-radius: 5px;
     }
+  }
 
-    img:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.1);
-    }
+  .image::after {
+    content: "";
+    width: 100%;
+    height: 96%;
+    top: 5%;
+    right: -5%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+    border: 3px solid rgb(63, 114, 175);
+    transition: all 200ms ease-in-out;
+  }
+
+  .image:hover::after {
+    width: 102%;
+    height: 98%;
+    top: -1%;
+    right: -1%;
   }
 
   h3 {
@@ -108,6 +125,25 @@ export const ProjectDetailStyle = styled.div`
 
     .link {
       margin: 5px 0 0;
+    }
+
+    .image::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 3%;
+      right: -3%;
+      position: absolute;
+      z-index: -1;
+      border-radius: 5px;
+      border: 3px solid rgb(63, 114, 175);
+      transition: all 200ms ease-in-out;
+    }
+    .image:hover::after {
+      width: 102%;
+      height: 102%;
+      top: -1%;
+      right: -1%;
     }
   }
 
