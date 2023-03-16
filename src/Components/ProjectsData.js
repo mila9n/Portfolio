@@ -6,6 +6,7 @@ export default [
       "Context",
       "Styled-Components",
       "React Router",
+      "Static Routing",
       "Validation",
     ],
     description:
@@ -13,6 +14,21 @@ export default [
     img: "./images/multi-step-final.png",
     link: "https://github.com/mila9n/Multi-step-Form",
     live: "https://multi-step-form22.netlify.app/",
+  },
+  {
+    title: "Rest-Countries-Api",
+    tags: [
+      "Fetch Api",
+      "Context",
+      "React Router",
+      "Dynamic Routing",
+      "UseEffect Hook",
+    ],
+    description:
+      "This project is one of the challange of frontend.io website.It fetches countries detail from the rest-countries api and displays as shown in the website.When clicked on any of the country it takes you to the new route, which has all the more detail about that particular country.Because of the Router we can make it look like, that it is a multipage website.",
+    img: "./images/desktop-design-home-dark.jpg",
+    link: "https://github.com/mila9n/rest-countries-api",
+    live: "https://rest-countries-api-22.netlify.app/",
   },
   {
     title: "To Do Lists",
