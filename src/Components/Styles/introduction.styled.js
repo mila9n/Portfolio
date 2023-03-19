@@ -83,16 +83,16 @@ export const IntroductionStyle = styled.section`
       }
     }
     & > div:nth-of-type(2) {
-      width: 350px;
-      height: 350px;
+      width: 300px;
+      height: 300px;
       overflow: hidden;
       background-color: #dbe2ef;
-      box-shadow: 10px 10px 2px #112d4e;
+      box-shadow: 6px 6px 10px #112d4e;
       transition: box-shadow 300ms ease-in-out;
       border-left: 1px solid #112d4e;
       border-top: 1px solid #112d4e;
       &:hover {
-        box-shadow: 15px 15px 2px #112d4e;
+        box-shadow: 8px 8px 10px #112d4e;
       }
     }
   }
@@ -172,12 +172,12 @@ export const IntroductionStyle = styled.section`
 
     & > .container > div:nth-of-type(2) {
       margin-bottom: 50px;
-      box-shadow: 5px 5px 2px #112d4e;
-      width: 250px;
-      height: 250px;
+      box-shadow: 4px 4px 10px #112d4e;
+      width: 200px;
+      height: 200px;
 
       &:hover {
-        box-shadow: 8px 8px 2px #112d4e;
+        box-shadow: 6px 6px 10px #112d4e;
       }
     }
   } ;

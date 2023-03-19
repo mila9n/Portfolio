@@ -7,41 +7,25 @@ export const ProjectDetailStyle = styled.div`
   justify-content: space-between;
 
   & > .details {
-    width: 50%;
+    width: 43%;
   }
 
   & > .image {
-    width: 46%;
-    position: relative;
-    z-index: 1;
-
+    width: 55%;
     img {
       width: 100%;
-      height: 96%;
-      object-fit: cover;
       cursor: pointer;
-      border-radius: 5px;
+      box-shadow: 1px 1px 30px lightgray;
+      transition: box-shadow 400ms ease-in-out;
+      border-radius: 10px;
     }
   }
-
-  .image::after {
-    content: "";
-    width: 100%;
-    height: 96%;
-    top: 5%;
-    right: -5%;
-    position: absolute;
-    z-index: -1;
-    border-radius: 5px;
-    border: 3px solid rgb(63, 114, 175);
-    transition: all 200ms ease-in-out;
+  img:hover {
+    box-shadow: 10px 10px 30px lightgray;
   }
 
-  .image:hover::after {
-    width: 102%;
-    height: 98%;
-    top: -1%;
-    right: -1%;
+  .tablet-image {
+    display: none;
   }
 
   h3 {
@@ -111,7 +95,27 @@ export const ProjectDetailStyle = styled.div`
   @media (max-width: 800px) {
     & {
       flex-direction: column;
-      margin: 50px auto 60px;
+      margin: 30px auto 20px;
+    }
+
+    .tablet-image {
+      display: flex;
+      width: 100%;
+      margin: 15px 0;
+
+      img {
+        margin: 0 auto;
+        cursor: pointer;
+        box-shadow: 1px 1px 30px lightgray;
+        transition: box-shadow 400ms ease-in-out;
+      }
+    }
+    img:hover {
+      box-shadow: 10px 10px 30px lightgray;
+    }
+
+    & > .image {
+      display: none;
     }
 
     & > .details {
@@ -120,30 +124,12 @@ export const ProjectDetailStyle = styled.div`
     }
 
     & > .image {
-      width: 100%;
+      width: 80%;
+      margin: 0 auto;
     }
 
     .link {
       margin: 5px 0 0;
-    }
-
-    .image::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      top: 3%;
-      right: -3%;
-      position: absolute;
-      z-index: -1;
-      border-radius: 5px;
-      border: 3px solid rgb(63, 114, 175);
-      transition: all 200ms ease-in-out;
-    }
-    .image:hover::after {
-      width: 102%;
-      height: 102%;
-      top: -1%;
-      right: -1%;
     }
   }
 

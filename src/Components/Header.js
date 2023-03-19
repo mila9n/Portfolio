@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderStyle } from "./Styles/Header.styled";
-import { FaBars, FaCaretRight } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   const [burgarButton, setBurgarButton] = React.useState(false);

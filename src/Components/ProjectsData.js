@@ -16,6 +16,21 @@ export default [
     live: "https://multi-step-form22.netlify.app/",
   },
   {
+    title: "Shopping Cart",
+    tags: [
+      "Fetch API",
+      "UseEffect Hook",
+      "Router",
+      "Redux Toolkit",
+      "Styled-Components",
+    ],
+    description:
+      "Shopping Cart uses fetch API to load products.React Router helps users to browse through the different pages of website and state is managed with Redux to increase the performance.User can add number of products or remove it from the cart.",
+    img: "./images/shopping cart.png",
+    link: "https://github.com/mila9n/Shopping-Cart",
+    live: "https://shopping-cart-222.netlify.app/",
+  },
+  {
     title: "Rest-Countries-Api",
     tags: [
       "Fetch Api",
@@ -39,21 +54,7 @@ export default [
     link: "https://github.com/mila9n/To-Do-List",
     live: "https://todo-app-22.netlify.app",
   },
-  {
-    title: "Shopping Cart",
-    tags: [
-      "Fetch API",
-      "UseEffect Hook",
-      "Router",
-      "Redux Toolkit",
-      "Styled-Components",
-    ],
-    description:
-      "Shopping Cart uses fetch API to load products.React Router helps users to browse through the different pages of website and state is managed with Redux to increase the performance.User can add number of products or remove it from the cart.",
-    img: "./images/shopping cart.png",
-    link: "https://github.com/mila9n/Shopping-Cart",
-    live: "https://shopping-cart-222.netlify.app/",
-  },
+
   {
     title: "Rating App",
     tags: ["React", "Styled-Components", "useState", "Conditional rendering"],

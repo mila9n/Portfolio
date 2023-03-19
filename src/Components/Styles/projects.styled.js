@@ -6,6 +6,16 @@ export const ProjectsStyle = styled.section`
   margin: 50px auto;
   padding: 16px;
 
+  & > div:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: 800px) {
+    & > div:nth-of-type(even) {
+      flex-direction: column;
+    }
+  }
+
   @media (max-width: 950px) {
     & {
       width: 95%;

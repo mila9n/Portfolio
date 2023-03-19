@@ -12,6 +12,9 @@ const ProjectDetail = (props) => {
             return <span key={index}>{item}</span>;
           })}
         </div>
+        <a href={props.live} target="_blank" className="tablet-image">
+          <img src={props.img} />
+        </a>
         <p>{props.description}</p>
         <div className="live__link">
           <a href={props.live} target="_blank">
