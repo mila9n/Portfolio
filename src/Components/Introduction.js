@@ -1,6 +1,6 @@
 import React from "react";
 import { IntroductionStyle } from "./Styles/introduction.styled";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Introduction = () => {
   return (
@@ -11,16 +11,17 @@ const Introduction = () => {
           <h2>
             Milan <span className="outline">Thakur</span>
           </h2>
-          <h3>Junior Web Developer</h3>
+          <h3>Junior React web developer</h3>
           <p>
-            I'm junior frontend developer, creating modern & dynamic web
-            application with React js.
+            I'm a junior frontend developer who builds modern and dynamic web
+            apps using React JS.
           </p>
           <div>
             <a
               href="https://github.com/mila9n"
               target="_blank"
               className="github"
+              rel="noreferrer"
             >
               <FaGithub />
             </a>
@@ -28,6 +29,7 @@ const Introduction = () => {
               href="https://www.linkedin.com/in/milanthakur8999/"
               target="_blank"
               className="linkedin"
+              rel="noreferrer"
             >
               <FaLinkedin />
             </a>

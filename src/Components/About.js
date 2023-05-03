@@ -8,15 +8,19 @@ const About = () => {
       <div className="container">
         <Heading heading={"About Me"} />
         <p>
-          Hello! My name is Milan and i create modern and dynamic web
-          application using React. I use various components and libraries in the
-          React ecosystem, such as React Router, Redux tool-kit and styled
-          components. Through understanding of JavaScript, HTML and CSS.
+          Hi there! My name is Milan and I'm a fresher in web development, with
+          a focus on creating modern and dynamic applications using React. I
+          have been working with various components and libraries in the React
+          ecosystem, such as React Router, Redux Tool-kit, and Styled
+          Components, and have gained a solid understanding of JavaScript, HTML,
+          and CSS. With my enthusiasm and dedication, I am eager to build highly
+          functional and visually appealing applications using React.
         </p>
         <p>
-          Open minded, always eager to learn new technologies and explore new
-          possibilities in web development. In my down time i like to read,
-          watch football or anime.
+          I am an open-minded web developer who is always eager to learn new
+          technologies and explore new possibilities in this field. During my
+          downtime, I enjoy reading, watching football, and learning about
+          astrophysics.
         </p>
       </div>
     </AboutStyle>

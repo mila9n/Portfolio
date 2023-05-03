@@ -36,7 +36,7 @@ const Header = () => {
               <a href="#about">About</a>
               <a href="#skills">Skills</a>
               <a href="#projects">Projects</a>
-              <a href="https://mila9n.github.io/Resume/" target="_blank">
+              <a href="./pdf/Milan-cv.pdf" target="_blank">
                 Resume
               </a>
             </div>
