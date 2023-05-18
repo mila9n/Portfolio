@@ -1,11 +1,11 @@
 import React from "react";
 import Heading from "./Heading";
 import { ProjectsStyle } from "./Styles/projects.styled";
-import ProjectsData from "./ProjectsData";
+import { projectData } from "./ProjectsData";
 import ProjectDetail from "./ProjectDetail";
 
 const Projects = () => {
-  const [projects] = React.useState(ProjectsData);
+  const [projects] = React.useState(projectData);
 
   const projectsMap = projects.map((item, index) => {
     return (

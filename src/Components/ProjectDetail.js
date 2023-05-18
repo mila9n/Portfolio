@@ -12,12 +12,17 @@ const ProjectDetail = (props) => {
             return <span key={index}>{item}</span>;
           })}
         </div>
-        <a href={props.live} target="_blank" className="tablet-image">
-          <img src={props.img} />
-        </a>
+        {/* <a
+          href={props.live}
+          target="_blank"
+          className="tablet-image"
+          rel="noreferrer"
+        >
+          <img src={props.img} alt="projectimage" />
+        </a> */}
         <p>{props.description}</p>
         <div className="live__link">
-          <a href={props.live} target="_blank">
+          <a href={props.live} target="_blank" rel="noreferrer">
             Go live
             <span>
               <FaAngleRight />
@@ -25,7 +30,7 @@ const ProjectDetail = (props) => {
           </a>
         </div>
         <div className="link">
-          <a href={props.link} target="_blank">
+          <a href={props.link} target="_blank" rel="noreferrer">
             View code
             <span>
               <FaAngleRight />
@@ -35,8 +40,8 @@ const ProjectDetail = (props) => {
       </div>
 
       <div className="image">
-        <a href={props.live} target="_blank">
-          <img src={props.img} />
+        <a href={props.live} target="_blank" rel="noreferrer">
+          <img src={props.img} alt="project " />
         </a>
       </div>
     </ProjectDetailStyle>
