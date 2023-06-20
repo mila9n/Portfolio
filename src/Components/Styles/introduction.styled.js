@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
 export const IntroductionStyle = styled.section`
+  margin-top: 10vh;
+  height: 90vh;
+  display: flex;
+  align-items: center;
   .container {
     padding: 16px;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     width: 80%;
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px auto 130px;
+    margin: 300px auto;
 
     & > div:nth-of-type(1) {
       width: 60%;
@@ -180,5 +181,10 @@ export const IntroductionStyle = styled.section`
         box-shadow: 6px 6px 10px #112d4e;
       }
     }
-  } ;
+  }
+
+  @media (max-height: 600px) {
+    height: auto;
+    margin-top: 50px;
+  }
 `;

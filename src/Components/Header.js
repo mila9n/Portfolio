@@ -3,15 +3,15 @@ import { HeaderStyle } from "./Styles/Header.styled";
 import { FaBars } from "react-icons/fa";
 
 const Header = () => {
-  const [burgarButton, setBurgarButton] = React.useState(false);
+  const [burgerButton, setBurgerButton] = React.useState(false);
 
   const handleClick = () => {
-    setBurgarButton((prevValue) => !prevValue);
+    setBurgerButton((prevValue) => !prevValue);
   };
 
   React.useEffect(() => {
     function handleResize() {
-      setBurgarButton(false);
+      setBurgerButton(false);
     }
 
     window.addEventListener("resize", handleResize);
@@ -29,9 +29,11 @@ const Header = () => {
             <a href="#">MT.</a>
           </div>
           <div className="button" onClick={handleClick}>
-            <FaBars />
+            <div className={burgerButton ? "bar bar1" : "bar"}></div>
+            <div className={burgerButton ? "bar bar2" : "bar"}></div>
+            <div className={burgerButton ? "bar bar3" : "bar"}></div>
           </div>
-          <div className={burgarButton ? "clicked" : null}>
+          <div className={burgerButton ? "clicked nav_links" : "nav_links"}>
             <div>
               <a href="#about">About</a>
               <a href="#skills">Skills</a>

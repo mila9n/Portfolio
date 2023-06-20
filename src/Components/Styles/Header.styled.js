@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
-  height: 12vh;
+  background-color: #f9f7f7;
+  box-shadow: 1px 1px 7px #3f72af;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   & > div.container {
-    padding: 16px;
+    padding: 10px 15px 15px;
     width: 80%;
     margin: 0 auto;
     max-width: 1000px;
@@ -25,13 +29,13 @@ export const HeaderStyle = styled.header`
         position: relative;
         z-index: 2;
         a {
-          width: 60px;
-          height: 50px;
+          width: 50px;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
           background-color: #f9f7f7;
-          font-size: 26px;
+          font-size: 22px;
           font-weight: 800;
           border-left: 1px solid black;
           border-top: 1px solid black;
@@ -85,9 +89,6 @@ export const HeaderStyle = styled.header`
 
   .button {
     display: none;
-    align-items: center;
-    color: #3f72af;
-    font-size: 35px;
   }
 
   @media (max-width: 750px) {
@@ -95,41 +96,64 @@ export const HeaderStyle = styled.header`
       width: 100%;
     }
 
-    .button {
-      display: flex;
-      position: relative;
-      z-index: 3;
-    }
-
-    div:nth-of-type(3) {
+    .nav_links {
       position: absolute;
-      background-color: rgba(219, 226, 239);
       right: 0;
       top: 0;
       height: 100vh;
-      width: 0;
-      z-index: 2;
-      overflow: hidden;
+      background-color: #dbe2ef;
+      width: 0px;
       transition: width 150ms ease-in;
-    }
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
 
-    div:nth-of-type(3) > div {
-      display: block !important;
-      position: absolute;
-      width: 100%;
-      top: 12vh;
-      left: 0;
-      padding: 0 0 0 20px;
-      a {
-        display: table !important;
-        font-size: 20px !important;
-        color: #112d4e !important;
-        margin: 0 0 15px 0 !important;
+      & > div {
+        margin-top: 82px;
+        flex-direction: column;
+        align-items: start !important;
+
+        & > a {
+          margin-bottom: 10px !important;
+          margin-left: 15px !important;
+        }
       }
     }
-  }
 
-  .clicked {
-    width: 300px !important;
+    .clicked {
+      width: 300px;
+    }
+
+    .button {
+      display: block;
+      width: 35px;
+      position: relative;
+      z-index: 3;
+      cursor: pointer;
+
+      & > .bar {
+        width: 100%;
+        height: 5px;
+        margin: 6px 0;
+        background-color: #3f72af;
+        border-radius: 100px;
+        transform: rotate(0deg);
+        transform-origin: left;
+        transition: transform 150ms ease-in, opacity 50ms ease-in;
+      }
+
+      .bar1 {
+        transform: rotate(40deg);
+        transform-origin: left;
+      }
+
+      .bar3 {
+        transform: rotate(-40deg);
+        transform-origin: left;
+      }
+
+      .bar2 {
+        opacity: 0;
+      }
+    }
   }
 `;

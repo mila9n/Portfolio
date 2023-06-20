@@ -28,7 +28,7 @@ export const projectData = [
       "The Shopping Cart project utilizes the fetch API to load products, while React Router allows for easy navigation across various pages on the website. Redux is used for state management, which enhances performance. Users are able to add or remove products from the cart as needed.",
     img: "./images/shopping cart.png",
     link: "https://github.com/mila9n/Shopping-Cart",
-    live: "https://shopping-cart-222.netlify.app/",
+    live: "https://shopping-cart-zeta-nine.vercel.app/",
   },
 
   {
