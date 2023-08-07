@@ -4,10 +4,10 @@ import {
   FaBootstrap,
   FaJs,
   FaReact,
-  FaGitSquare,
   FaGithub,
   FaNodeJs,
   FaDatabase,
+  FaGitAlt,
 } from "react-icons/fa";
 
 const skillsData = [
@@ -40,14 +40,14 @@ const skillsData = [
 
   {
     skill: <FaNodeJs />,
-    name: "Node js",
+    name: "Nodejs",
   },
   {
     skill: <FaDatabase />,
-    name: "Mongo Db",
+    name: "MongoDb",
   },
   {
-    skill: <FaGitSquare />,
+    skill: <FaGitAlt />,
     name: "Git",
     id: 6,
   },

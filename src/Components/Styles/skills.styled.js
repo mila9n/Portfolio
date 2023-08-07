@@ -21,10 +21,9 @@ export const SkillsStyle = styled.section`
         border-left: 1px solid #112d4e;
         border-top: 1px solid #112d4e;
         box-shadow: 3px 3px 2px #112d4e;
-        cursor: pointer;
         transform-origin: top left;
         transform: rotate(-8deg);
-        transition: all 300ms ease-in-out;
+        transition: transform 300ms ease-in-out;
 
         & > span {
           display: table;
@@ -32,7 +31,8 @@ export const SkillsStyle = styled.section`
           color: #112d4e;
           opacity: 0.8;
           font-size: 50px;
-          transition: all 240ms ease-in-out;
+          transition: transform 240ms ease-in-out, color 800ms ease-in,
+            backgroundColor 800ms ease-in;
         }
         h5 {
           font-size: 13px;
@@ -43,8 +43,56 @@ export const SkillsStyle = styled.section`
       }
 
       & > div:hover {
-        animation: skillCard 2s ease-in-out;
+        animation: skillCard 1.8s ease-in-out;
         transform: rotate(3deg);
+      }
+
+      // javascript
+      & > div:hover .javascript {
+        color: yellow;
+        background-color: #112d4e;
+      }
+
+      // React
+      & > div:hover .react {
+        color: #149eca;
+      }
+
+      // css
+      & > div:hover .css3 {
+        color: #2e98ca;
+      }
+
+      // Html
+      & > div:hover .html5 {
+        color: #dd4b25;
+      }
+
+      // Mongo db
+      & > div:hover .mongodb {
+        color: #00ed64;
+      }
+
+      // node js
+      & > div:hover .nodejs {
+        color: green;
+      }
+
+      // Bootstrap
+      & > div:hover .bootstrap {
+        color: #7b11f7;
+      }
+
+      // Git
+      & > div:hover .git {
+        color: #f54d27;
+      }
+
+      // Git hub
+      & > div:hover .github {
+        color: #fff;
+        border-radius: 100%;
+        background-color: #000;
       }
     }
     @keyframes skillCard {
