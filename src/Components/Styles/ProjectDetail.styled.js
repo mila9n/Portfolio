@@ -2,26 +2,24 @@ import styled from "styled-components";
 
 export const ProjectDetailStyle = styled.div`
   padding: 0px 0px 0 15px;
-  margin: 50px auto 80px;
+  margin: 50px auto;
   display: flex;
   justify-content: space-between;
 
   & > .details {
-    width: 43%;
+    width: 42%;
   }
 
   & > .image {
     width: 55%;
     img {
       width: 100%;
+      height: 80%;
+      object-fit: cover;
+      border-radius: 8px;
       cursor: pointer;
-      box-shadow: 1px 1px 30px lightgray;
-      transition: box-shadow 400ms ease-in-out;
-      border-radius: 10px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
-  }
-  img:hover {
-    box-shadow: 10px 10px 30px lightgray;
   }
 
   .tablet-image {
@@ -136,7 +134,7 @@ export const ProjectDetailStyle = styled.div`
   @media (max-width: 450px) {
     & {
       padding: 0;
-      margin: 40px auto 50px;
+      margin: 30px auto 30px;
     }
 
     h3 {

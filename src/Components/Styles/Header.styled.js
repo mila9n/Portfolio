@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const HeaderStyle = styled.header`
   background-color: #f9f7f7;
   box-shadow: 1px 1px 7px #3f72af;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
+  z-index: 2;
 
   & > div.container {
     padding: 10px 15px 15px;
@@ -27,7 +28,7 @@ export const HeaderStyle = styled.header`
         box-shadow: 5px 5px 2px #112d4e;
         transition: all 300ms ease-in-out;
         position: relative;
-        z-index: 2;
+        z-index: 0;
         a {
           width: 50px;
           height: 40px;
@@ -41,17 +42,7 @@ export const HeaderStyle = styled.header`
           border-top: 1px solid black;
           background-color: #dbe2ef;
         }
-        /* &::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          top: -4px;
-          left: -5px;
-          right: 2px;
-          bottom: 2px;
-          border: 1px solid black;
-          z-index: -1;
-        } */
+
         &:hover {
           box-shadow: 7px 7px 1px #112d4e;
         }
@@ -98,12 +89,12 @@ export const HeaderStyle = styled.header`
 
     .nav_links {
       position: absolute;
+      width: 0;
       right: 0;
       top: 0;
       height: 100vh;
       background-color: #dbe2ef;
-      width: 0px;
-      transition: width 150ms ease-in;
+      transition: width 180ms ease-in-out;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
 
@@ -111,6 +102,7 @@ export const HeaderStyle = styled.header`
         margin-top: 82px;
         flex-direction: column;
         align-items: start !important;
+        overflow: hidden;
 
         & > a {
           margin-bottom: 10px !important;
@@ -121,6 +113,8 @@ export const HeaderStyle = styled.header`
 
     .clicked {
       width: 300px;
+      box-shadow: 0px -20px 200px gray;
+      border-left: 3px solid #112d4e;
     }
 
     .button {

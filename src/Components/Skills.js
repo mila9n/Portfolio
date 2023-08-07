@@ -2,13 +2,13 @@ import React from "react";
 import Heading from "./Heading";
 import { SkillsStyle } from "./Styles/skills.styled";
 import skillsData from "./skills.data";
-import Skill from "./Skill";
+import SkillCard from "./SkillCard";
 
 const Skills = () => {
   const [skills] = React.useState(skillsData);
 
   const skillsContainer = skills.map((item) => {
-    return <Skill icon={item.skill} name={item.name} key={item.id} />;
+    return <SkillCard icon={item.skill} name={item.name} key={item.name} />;
   });
 
   return (

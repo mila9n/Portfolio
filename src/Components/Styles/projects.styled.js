@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProjectsStyle = styled.section`
   width: 80%;
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 40px auto 50px;
   padding: 16px;
 
   & > div:nth-of-type(even) {
@@ -24,7 +24,7 @@ export const ProjectsStyle = styled.section`
 
   @media (max-width: 690px) {
     & {
-      margin: 20px auto;
+      margin: 25px auto;
     }
   }
 

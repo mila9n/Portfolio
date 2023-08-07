@@ -7,7 +7,7 @@ export const AboutStyle = styled.section`
     max-width: 1000px;
     padding: 16px;
     p {
-      width: 60%;
+      width: 80%;
       line-height: 1.6;
       font-size: 16px;
       margin-bottom: 15px;

@@ -11,10 +11,10 @@ const Introduction = () => {
           <h2>
             Milan <span className="outline">Thakur</span>
           </h2>
-          <h3>Junior React web developer</h3>
+          <h3>React Developer</h3>
           <p>
-            I'm a junior frontend developer who builds modern and dynamic web
-            apps using React JS.
+            I'm a Web developer who builds modern and dynamic web apps using
+            React & Node Js.
           </p>
           <div>
             <a

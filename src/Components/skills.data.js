@@ -6,9 +6,11 @@ import {
   FaReact,
   FaGitSquare,
   FaGithub,
+  FaNodeJs,
+  FaDatabase,
 } from "react-icons/fa";
 
-export default [
+const skillsData = [
   {
     skill: <FaHtml5 />,
     name: "Html5",
@@ -35,6 +37,15 @@ export default [
     name: "React",
     id: 5,
   },
+
+  {
+    skill: <FaNodeJs />,
+    name: "Node js",
+  },
+  {
+    skill: <FaDatabase />,
+    name: "Mongo Db",
+  },
   {
     skill: <FaGitSquare />,
     name: "Git",
@@ -46,3 +57,5 @@ export default [
     id: 7,
   },
 ];
+
+export default skillsData;

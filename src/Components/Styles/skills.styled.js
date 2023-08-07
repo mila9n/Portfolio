@@ -4,44 +4,46 @@ export const SkillsStyle = styled.section`
   .container {
     width: 80%;
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 50px auto 10px;
     padding: 16px;
 
     & > div {
       width: 100%;
-      margin-top: 50px;
+      margin-top: 60px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 30px;
 
       & > div {
         text-align: center;
-        padding: 20px 10px;
+        padding: 10px 10px;
         border-radius: 10px;
         border-left: 1px solid #112d4e;
         border-top: 1px solid #112d4e;
-        box-shadow: 5px 5px 2px #112d4e;
-        transition: all 300ms ease-in-out;
+        box-shadow: 3px 3px 2px #112d4e;
         cursor: pointer;
+        transform-origin: top left;
+        transform: rotate(-8deg);
+        transition: all 300ms ease-in-out;
 
         & > span {
           display: table;
           margin: 0 auto;
-          opacity: 1;
           color: #112d4e;
-          font-size: 60px;
+          opacity: 0.8;
+          font-size: 50px;
+          transition: all 240ms ease-in-out;
         }
         h5 {
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 500;
-          margin-top: 20px;
-          color: black;
+          margin-top: 10px;
+          color: #112d4e;
         }
       }
 
       & > div:hover {
-        box-shadow: 8px 8px 2px #112d4e;
-        background-color: #dbe2ef;
+        transform: rotate(0deg);
       }
     }
   }
@@ -57,14 +59,13 @@ export const SkillsStyle = styled.section`
       margin: 20px auto;
 
       & > div {
-        margin-top: 20px;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        margin-top: 50px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
 
         & > div {
           padding: 12px 10px;
           border-radius: 10px;
-          box-shadow: 4px 4px 2px #112d4e;
           cursor: pointer;
 
           & > span {
@@ -79,10 +80,41 @@ export const SkillsStyle = styled.section`
     }
   }
 
+  @media (max-width: 500px) {
+    .container {
+      margin: 20px auto;
+
+      & > div {
+        margin-top: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+    }
+  }
+
   @media (max-width: 425px) {
-    .container > div {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+    .container {
+      margin: 20px auto;
+
+      & > div {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 20px;
+
+        & > div {
+          padding: 5px 8px;
+          border-radius: 10px;
+          box-shadow: 3px 3px 2px #112d4e;
+
+          & > span {
+            font-size: 30px;
+          }
+          h5 {
+            font-size: 10px;
+            margin-top: 7px;
+          }
+        }
+      }
     }
   }
 `;

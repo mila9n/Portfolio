@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const IntroductionStyle = styled.section`
-  margin-top: 10vh;
-  height: 90vh;
+  height: 91vh;
   display: flex;
   align-items: center;
   .container {
@@ -12,7 +11,7 @@ export const IntroductionStyle = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 300px auto;
+    margin: 0 auto;
 
     & > div:nth-of-type(1) {
       width: 60%;
@@ -37,12 +36,6 @@ export const IntroductionStyle = styled.section`
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #112d4e;
       }
-
-      /* .outline::after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-      } */
 
       h3 {
         font-size: 34px;
@@ -90,8 +83,10 @@ export const IntroductionStyle = styled.section`
       background-color: #dbe2ef;
       box-shadow: 6px 6px 10px #112d4e;
       transition: box-shadow 300ms ease-in-out;
-      border-left: 1px solid #112d4e;
-      border-top: 1px solid #112d4e;
+      border-left: 2px solid #112d4e;
+      border-top: 2px solid #112d4e;
+      border-radius: 5px;
+
       &:hover {
         box-shadow: 8px 8px 10px #112d4e;
       }
@@ -127,7 +122,7 @@ export const IntroductionStyle = styled.section`
 
   @media (max-width: 690px) {
     .container {
-      margin: 30px auto 20px;
+      /* margin: 30px auto 20px; */
     }
 
     & > .container {
@@ -185,6 +180,5 @@ export const IntroductionStyle = styled.section`
 
   @media (max-height: 600px) {
     height: auto;
-    margin-top: 50px;
   }
 `;
