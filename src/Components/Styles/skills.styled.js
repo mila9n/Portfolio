@@ -43,7 +43,25 @@ export const SkillsStyle = styled.section`
       }
 
       & > div:hover {
-        transform: rotate(0deg);
+        animation: skillCard 2s ease-in-out;
+        transform: rotate(3deg);
+      }
+    }
+    @keyframes skillCard {
+      0% {
+        transform: rotate(-8deg);
+      }
+      20% {
+        transform: rotate(6deg);
+      }
+      40% {
+        transform: rotate(-2deg);
+      }
+      60% {
+        transform: rotate(5deg);
+      }
+      100% {
+        transform: rotate(3deg);
       }
     }
   }
