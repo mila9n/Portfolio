@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
   background-color: #f9f7f7;
-  box-shadow: 1px 1px 7px #3f72af;
+  box-shadow: 0px 1px 10px #3f72af;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   & > div.container {
     padding: 10px 15px 15px;
@@ -113,7 +115,6 @@ export const HeaderStyle = styled.header`
 
     .clicked {
       width: 300px;
-      box-shadow: 0px -20px 200px gray;
       border-left: 3px solid #112d4e;
     }
 

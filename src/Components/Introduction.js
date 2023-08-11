@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Introduction = () => {
   return (
-    <IntroductionStyle>
+    <IntroductionStyle id="introduction">
       <div className="container">
         <div>
           <span className="greeting">Hello, i'm </span>
@@ -35,8 +35,8 @@ const Introduction = () => {
             </a>
           </div>
         </div>
-        <div>
-          <img src="./images/profile2.png" alt="profile illustration" />
+        <div className="image">
+          <img src="./images/naruto.png" alt="profile illustration" />
         </div>
       </div>
     </IntroductionStyle>

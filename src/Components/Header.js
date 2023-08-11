@@ -1,6 +1,5 @@
 import React from "react";
 import { HeaderStyle } from "./Styles/Header.styled";
-import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   const [burgerButton, setBurgerButton] = React.useState(false);
@@ -9,24 +8,24 @@ const Header = () => {
     setBurgerButton((prevValue) => !prevValue);
   };
 
-  React.useEffect(() => {
-    function handleResize() {
-      setBurgerButton(false);
-    }
+  // React.useEffect(() => {
+  //   function handleResize() {
+  //     setBurgerButton(false);
+  //   }
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // });
 
   return (
     <HeaderStyle>
       <div className="container">
         <nav>
           <div>
-            <a href="#">MT.</a>
+            <a href="#introduction">MT.</a>
           </div>
           <div className="button" onClick={handleClick}>
             <div className={burgerButton ? "bar bar1" : "bar"}></div>

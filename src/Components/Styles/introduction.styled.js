@@ -77,8 +77,8 @@ export const IntroductionStyle = styled.section`
       }
     }
     & > div:nth-of-type(2) {
-      width: 300px;
-      height: 300px;
+      width: 350px;
+      height: 350px;
       overflow: hidden;
       background-color: #dbe2ef;
       box-shadow: 6px 6px 10px #112d4e;
