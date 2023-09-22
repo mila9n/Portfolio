@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const IntroductionStyle = styled.section`
-  height: 91vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   .container {

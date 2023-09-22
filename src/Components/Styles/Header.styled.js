@@ -61,16 +61,25 @@ export const HeaderStyle = styled.header`
           color: #3f72af;
           position: relative;
           margin-left: 50px;
+          text-align: center;
+          /* border: 1px solid gray; */
         }
         a::after {
           content: "";
           display: block;
           width: 100%;
-          height: 3px;
+          height: 2px;
           transform: scaleX(0);
           transform-origin: right;
-          background-color: #112d4e;
-          transition: transform 300ms ease-in-out;
+          background-image: linear-gradient(
+            to right,
+            #112d4e,
+            #1e2022,
+            #3f72af,
+            #dbe2ef
+          );
+          transition: transform 300ms linear;
+          border-radius: 5px;
         }
         a:hover::after {
           transform: scaleX(1);
