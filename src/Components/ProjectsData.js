@@ -17,7 +17,6 @@ export const projectData = [
       "Olx clone uses key features of Olx such as upload product,Edit product info, Like product, Search product. This uses mongoDb database and Express js for Api, and all the routes are protected with JWT.",
     img: "./images/olx_clone.jpg",
     link: "https://github.com/mila9n/olx_clone",
-    live: "https://olx-clone-mern.vercel.app/",
   },
   {
     title: "Contact Us",
